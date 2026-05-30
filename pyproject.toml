@@ -1,0 +1,22 @@
+[project]
+name = "ima-note-mcp"
+version = "0.1.0"
+description = "IMA Note MCP Server"
+requires-python = ">=3.13"
+dependencies = [
+  "mcp>=1.7.0"
+]
+
+[project.scripts]
+ima-note-mcp = "ima_note_mcp.server:main"
+ima-note-mcp-init = "ima_note_mcp.server:init_main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

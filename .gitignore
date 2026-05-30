@@ -1,0 +1,21 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# 排除本地开发文件
+需求.md
+原始需求.md
+日志.md
+对话记录.md
+输出.md
+升级任务清单.md
+
+# 排除 IDE 配置
+.cursor/
